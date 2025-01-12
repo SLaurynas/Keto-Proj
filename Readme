@@ -5,11 +5,8 @@ npm init -y
 npm install express pg dotenv uuid cors nodemon --save-dev
 
 # 2. Database setup (in PostgreSQL console)
-psql -U postgres
 
-# In PostgreSQL console:
 CREATE DATABASE products_db;
-\c products_db
 
 CREATE TABLE original_products (
     id UUID PRIMARY KEY,
@@ -22,9 +19,6 @@ CREATE TABLE modified_products (
     product_code VARCHAR(255) UNIQUE NOT NULL,
     price DECIMAL(10,2) NOT NULL
 );
-
-\dt
-\q
 
 # 3. Start the server
 npm run dev
@@ -39,12 +33,3 @@ Invoke-RestMethod -Method POST -Uri "http://localhost:5000/api/sync-products" -C
 # Get products
 Invoke-RestMethod -Method GET -Uri "http://localhost:5000/api/original-products"
 Invoke-RestMethod -Method GET -Uri "http://localhost:5000/api/modified-products"
-
-# 5. View in PostgreSQL (optional)
-psql -U postgres products_db
-
-# In PostgreSQL console:
-SELECT COUNT(*) FROM original_products;
-SELECT COUNT(*) FROM modified_products;
-SELECT * FROM original_products LIMIT 5;
-SELECT * FROM modified_products LIMIT 5; 
