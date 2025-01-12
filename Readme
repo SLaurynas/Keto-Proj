@@ -7,7 +7,7 @@
 
 ## How It Works
 1. **Database Connection**: The application connects to a PostgreSQL database using environment variables for secure configuration
-2. **Product Management**: Users can view and manage keto-friendly products
+2. **Product Management**: Users can view and manage products
 3. **API Endpoints**: RESTful API endpoints handle data operations
 4. **User Interface**: Click the left button to generate 50 products and the right button, to apply the VAT fee.
 
