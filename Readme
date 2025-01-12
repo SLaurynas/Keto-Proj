@@ -1,3 +1,29 @@
+# Keto Project
+
+![Keto Project Screenshot](./08339965-5620-4b9e-a3f8-db58a39ce248.jpg)
+
+## Project Overview
+This is a web application focused on ketogenic diet management and product tracking. The project uses a PostgreSQL database for data storage and features a Node.js backend with a modern frontend interface.
+
+## Technical Stack
+- **Backend**: Node.js with Express
+- **Database**: PostgreSQL
+- **Frontend**: [Your frontend framework]
+- **API**: RESTful architecture
+
+## How It Works
+1. **Database Connection**: The application connects to a PostgreSQL database using environment variables for secure configuration
+2. **Product Management**: Users can view and manage keto-friendly products
+3. **API Endpoints**: RESTful API endpoints handle data operations
+4. **User Interface**: [Describe your main UI features]
+
+## Getting Started
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Set up your `.env` file with database credentials
+4. Run the server: `npm start`
+
+
 # 1. Initial setup
 mkdir server
 cd server
