@@ -4,7 +4,7 @@ cd server
 npm init -y
 npm install express pg dotenv uuid cors nodemon --save-dev
 
-# 2. Database setup (in PostgreSQL console)
+# 2. Database setup (in PostgreSQL)
 
 CREATE DATABASE products_db;
 
